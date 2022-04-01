@@ -1,0 +1,7 @@
+{
+	"greeting": {
+		"audience": "%s",
+		"greeting": "%s"
+	},
+	"theDate": "%s"
+}

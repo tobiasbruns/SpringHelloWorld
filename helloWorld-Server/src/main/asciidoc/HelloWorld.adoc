@@ -1,0 +1,7 @@
+= HelloWorld API Documentation
+
+== GetOne Hello
+
+include::{snippets}/getOne/response-body.adoc[]
+
+include::{snippets}/getOne/response-fields.adoc[]
