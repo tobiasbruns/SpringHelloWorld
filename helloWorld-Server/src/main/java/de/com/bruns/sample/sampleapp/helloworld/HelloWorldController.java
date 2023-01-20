@@ -32,6 +32,7 @@ public class HelloWorldController {
 
 	@GetMapping
 	public CollectionModel<EntityModel<HelloWorld>> getAll() {
+		service.asyncCreating();
 		return entityModelAssembler.toCollectionModel(service.getAll());
 	}
 
