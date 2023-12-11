@@ -1,0 +1,21 @@
+[{
+  "name": "org.apache.logging.log4j.message.DefaultFlowMessageFactory",
+  "allPublicMethods": true,
+  "allDeclaredConstructors": true
+},{
+  "name": "org.apache.logging.log4j.message.ParameterizedMessageFactory",
+  "allPublicMethods": true,
+  "allDeclaredConstructors": true
+}, {
+  "name": "org.hibernate.validator.internal.util.logging.Log_$logger",
+  "allPublicMethods": true,
+  "allDeclaredConstructors": true
+}, {
+  "name": "org.hibernate.validator.internal.util.logging.Messages_$bundle",
+  "allPublicMethods": true,
+  "allDeclaredConstructors": true,
+  "fields": [
+  { "name":"INSTANCE","allowWrite": false} 
+  ]
+}]
+

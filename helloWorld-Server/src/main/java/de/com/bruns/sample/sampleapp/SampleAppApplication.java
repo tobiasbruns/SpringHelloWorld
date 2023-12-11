@@ -48,7 +48,7 @@ public class SampleAppApplication {
 	}
 
 	@Bean
-	BeanFactoryPostProcessor beanFactoryPostProcessor() {
+	static BeanFactoryPostProcessor beanFactoryPostProcessor() {
 		return new BeanFactoryPostProcessor() {
 
 			@Override

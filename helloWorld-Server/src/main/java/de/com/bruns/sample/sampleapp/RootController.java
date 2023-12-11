@@ -16,7 +16,7 @@ import de.com.bruns.sample.sampleapp.helloworld.HelloWorld;
 import de.com.bruns.sample.sampleapp.helloworld.HelloWorldController;
 
 @RestController
-@RequestMapping
+@RequestMapping("/")
 public class RootController {
 
 	@Autowired(required = false)

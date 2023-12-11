@@ -4,17 +4,19 @@ import java.util.Optional;
 import java.util.stream.Stream;
 import java.util.stream.StreamSupport;
 
+import jakarta.validation.Valid;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
 
 import de.com.bruns.sample.sampleapp.callscope.CallScopeBean;
 import lombok.RequiredArgsConstructor;
-import lombok.extern.log4j.Log4j2;
+import lombok.extern.java.Log;
 
 @Service
 @RequiredArgsConstructor
-@Log4j2
+@Log
 public class HelloWorldService {
 
 	@Autowired
@@ -30,7 +32,7 @@ public class HelloWorldService {
 		return repository.findById(id);
 	}
 
-	public HelloWorld create(HelloWorld helloWorld) {
+	public HelloWorld create(@Valid HelloWorld helloWorld) {
 		return repository.save(helloWorld);
 	}
 

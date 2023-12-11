@@ -6,9 +6,9 @@ import org.springframework.context.ConfigurableApplicationContext;
 import org.testcontainers.containers.MongoDBContainer;
 import org.testcontainers.utility.DockerImageName;
 
-import lombok.extern.log4j.Log4j2;
+import lombok.extern.java.Log;
 
-@Log4j2
+@Log
 public class DbInitializer implements ApplicationContextInitializer<ConfigurableApplicationContext> {
 
 	@Override

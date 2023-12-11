@@ -2,7 +2,7 @@ package de.com.bruns.sample.sampleapp.helloworld;
 
 import java.time.LocalDate;
 
-import javax.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.NotNull;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
@@ -34,7 +34,7 @@ public class HelloWorld {
 	@Setter(AccessLevel.PACKAGE)
 	@JsonIgnore
 	private String id;
-	@NotEmpty
+	@NotNull
 	@ApiModelProperty("nice greetings")
 	private ComplexGreeting greeting;
 	@ApiModelProperty("date of the greeting")
