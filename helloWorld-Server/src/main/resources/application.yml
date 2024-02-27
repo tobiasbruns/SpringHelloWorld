@@ -2,7 +2,16 @@ spring:
   profiles:
     include:
     - common
+  threads:
+    virtual:
+      enabled: true
 
 
+management:
+  tracing:
+    sampling:
+      probability: 1.0
     
-      
+logging:
+  pattern:
+    level: ${spring.application.name:},T %X{traceId:-},S %X{spanId:-}

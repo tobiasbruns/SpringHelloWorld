@@ -1,4 +1,17 @@
-  spring:
-    jackson:
-      deserialization:
-        adjust-dates-to-context-time-zone: false
+spring:
+  threads:
+    virtual:
+      enabled: true
+  jackson:
+    deserialization:
+      adjust-dates-to-context-time-zone: false
+      
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*' 
+#           - health
+#           - metrics
+#           - beans
+#           - env

@@ -10,12 +10,18 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
 
+import io.micrometer.observation.ObservationRegistry;
+import lombok.extern.java.Log;
+
 @SpringBootTest
 @AutoConfigureMockMvc
+@Log
 class HelloWorldHandlerConfigurationTest {
 
 	@Autowired
 	private MockMvc mockMvc;
+	@Autowired
+	private ObservationRegistry registry;
 
 	@Test
 	void shouldDenieResource() throws Exception {
